@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Airline Booking Form</title>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style media="screen">
+#formbody{
+  background-image:url(https://images.unsplash.com/photo-1517999349371-c43520457b23?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-size: cover;
+}
+#h11{
+  color: #000000;
+  margin-top: 20px;
+  border-bottom:  5px dashed #ff9933;
+  padding: 8px;
+  margin-left: 385px;
+  width: 500px;
+}
+#input #input-group{
+  width: 300px;
+  margin: 5px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+.input-group1{
+  width: 200px;
+  margin: 5px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+.input-group2{
+  width: 200px;
+  margin: 5px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+#email{
+  width: 615px;
+  margin: 5px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+#input #input-group1{
+  width: 350px;
+  margin: 5px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+
+  outline:none;
+  background: transparent;
+  color:#fff;
+}
+::placeholder{
+   color: #fff;
+}
+
+#form h3{
+  border-bottom: 2px solid #3399ff;
+  width:210px;
+  padding: 5px;
+}
+
+body{
+font-family: 'Roboto Slab', serif;
+}
+.form-group{
+  background-color: #000;
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  opacity: 0.7;
+  border: 10px solid white;
+  border-radius: 30px;
+}
+#element1 {float:left;}
+#element2 {
+  float:right;
+ margin-right:120px;}
+ #element3 {
+   float:right;
+  margin-right:210px;}
+#buttons{
+  margin-top: 15px;
+ color: #000000;
+}
+</style>
+
+</head>
+<body id="formbody">
+<style media="screen">
+    .logo{
+    height: 50px;
+    }
+   </style>
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top bg-light">
+      <div class="container-fluid">
+        <a href="loginsuccess.jsp" class="navbar-brand"><img class="logo" src="https://www.webdesignerdepot.com/cdn-origin/uploads/2009/03/aeromexico.gif" alt=""></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" name="button" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" >
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+<h1 class="text-center" id="h11"><b>Airline Booking Form</b></h1>
+
+        <form class="form-group" action="abc.jsp" method="post">
+
+          <div class="container">
+
+
+              <div id="form">
+                <h4 class="text-white text-center" style="border-bottom:2px solid #3399ff;width:210px;padding:5px;"><b>Booking Details</b></h4>
+                </div>
+
+                </div>
+
+
+
+          <div class="" id="input">
+            <input type="text" id="input-group" name="frm" value="" placeholder="From" required>
+            <input type="text" id="input-group" name="t" value="" placeholder="To" required>
+
+            <input type="text" id="input-group" name="departure_date" value="" placeholder="Departure Date(YYYY-MM-DD)" required>
+
+            <input type="text" id="input-group" name="departure_time" value="" placeholder="Departure Time(HH:MM am/pm)" required>
+            <input type="text" id="input-group" name="no_of_seats" value="" placeholder="Number of tickets  to confirm" required>
+            <input type="text" id="input-group" name="message" value="" placeholder="Any Message">
+            <input id="element1" type="text" class="input-group1"name="type_of_airline" value="" placeholder="Preffered Airline"><p style="color: #fff;" id="element3">(IndoGo/AirIndia/SpaceJet)</p>
+              <input id="element1" type="text" class="input-group2"name="type_of_seat" value="" placeholder="Preffered Seat"><p style="color: #fff; font-size:15px;" id="element2">(Economy Class/Business Class/First Class)</p>
+              <input id="email"type="email" name="em" value="" placeholder="Email" required><br>
+
+
+
+
+  <input type="submit"class="btn btn-warning" id="buttons" name="" value="submit">
+  <input type="reset" name="" class="btn btn-success" id="buttons" value="Reset">
+
+        </form>
+
+
+
+  </body>
+
+</html>
